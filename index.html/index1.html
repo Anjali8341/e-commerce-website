@@ -1,54 +1,50 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Form with Message</title>
     <style>
-        .box {
-            width: 300px;
-            padding: 20px;
-            border: 1px solid black;
-            margin: 100px auto;
-            text-align: center;
-        }
+      .box {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 100px auto;
+        text-align: center;
+      }
 
-        input {
-            width: 90%;
-            padding: 8px;
-            margin: 10px 0;
-        }
+      input {
+        width: 90%;
+        padding: 8px;
+        margin: 10px 0;
+      }
 
-        button {
-            padding: 8px 20px;
-        }
+      button {
+        padding: 8px 20px;
+      }
 
-        #message {
-            margin-top: 15px;
-            color: green;
-            font-weight: bold;
-        }
+      #message {
+        margin-top: 15px;
+        color: green;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="box">
-        <h3>User Details</h3>
+      <h3>User Details</h3>
 
-        <input type="text" id="name" placeholder="Enter Name"><br>
+      <input type="text" id="name" placeholder="anjali" /><br />
+      <input type="tel"id="email" placeholder="anjalisuddapalli@email.com" /><br />
+      <input type="tel" id="mobile" placeholder="8341494526" /><br />
+      <button onclick="showMessage()">Submit</button>
 
-        <input type="tel" id="mobile" placeholder="Enter Mobile Number"><br>
-
-        <button onclick="showMessage()">Submit</button>
-
-        <p id="message"></p>
+      <p id="message"></p>
     </div>
 
     <script>
-        function showMessage() {
-            document.getElementById("message").innerHTML =
-                "Details submitted successfully!";
-        }
+      function showMessage() {
+        document.getElementById("message").innerHTML =
+          "Details submitted successfully!";
+      }
     </script>
-
-</body>
+  </body>
 </html>
